@@ -19,6 +19,8 @@ function playRound (playerSelection, computerSelection) {
     playerSelection = prompt("Choose rock, paper or scissors: ").toLowerCase();
     console.log("Player Choice: " + playerSelection);
     console.log("Computer Choice: " + computerSelection); 
+
+    //compare selections to find winner
     if (playerSelection === computerSelection) {
         return ties++, "It's a TIE, please try again.";
     } else if (playerSelection === "rock" && computerSelection === "paper" ||
@@ -35,7 +37,7 @@ function playRound (playerSelection, computerSelection) {
 }
 
 function playGame() {
-    
+    //loop for 5 games
     for (let i = 1; i < 6; i++) {
         console.log(`ROUND #${i}: ` + playRound(playerSelection, computerSelection));     
     }
