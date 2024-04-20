@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: slateblue;
+    background-color: slateblue;  
 }
 
 button {
@@ -21,10 +21,12 @@ button {
     max-width: 50%;
     border: 2px solid black;
     border-radius: 15px;
-    margin: auto;
     text-align: center;
     padding: 20px;
-    text-wrap: w;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .game-text {
